@@ -1,7 +1,6 @@
 import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
 import { Tabs } from "expo-router";
-import React from "react";
 import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
 
 const TabIcon = ({ focused, title, icon }: any) => {
@@ -11,7 +10,7 @@ const TabIcon = ({ focused, title, icon }: any) => {
         source={images.highlight}
         className="flex flex-row flex-1 w-full min-w-[112px] min-h-16 mt-4 items-center justify-center rounded-full overflow-hidden"
       >
-        <Image source={icon} tintColor="#151213" className="size-5" />
+        <Image source={icon} tintColor={"#151213"} className="size-5" />
         <Text className="text-secondary text-base font-semibold ml-2">
           {title}
         </Text>
@@ -20,7 +19,7 @@ const TabIcon = ({ focused, title, icon }: any) => {
   } else {
     return (
       <View className="size-full items-center justify-center rounded-full mt-4">
-        <Image source={icon} tintColor="#A8B5DB" className="size-5" />
+        <Image source={icon} tintColor={"#A8B5DB"} className="size-5" />
       </View>
     );
   }
@@ -48,7 +47,8 @@ const _layout = () => {
           borderWidth: 1,
           borderColor: "0f0D23",
         },
-      }}>
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
