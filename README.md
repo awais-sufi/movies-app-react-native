@@ -1,16 +1,10 @@
 <div align="center">
-  <br />
-    <a href="https://www.youtube.com/watch?v=f8Z9JyB2EIE" target="_blank">
-      <img src="assets/readme/hero.webp" alt="Project Banner">
-    </a>
-  <br />
-
   <div>
     <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="React Native" />
     <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logoColor=white&logo=expo&color=000020" alt="Expo" />
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="Tailwind CSS" />
-    <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=F02E65" alt="Appwrite" />
+    <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
   </div>
 
   <h3 align="center">A Movie Finding App with Extensive Search</h3>
@@ -28,13 +22,9 @@
 
 5. 🕸️ [Snippets (Code to Copy)](#snippets)
 
-6. 🔗 [Assets](#links)
-
-7. 🚀 [More](#more)
-
 ## <a name="introduction">🤖 Introduction</a>
 
-Built with Expo, TypeScript, and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Appwrite. It provides users with a seamless browsing experience, ranking movies based on various engagement metrics. The app leverages modern UI/UX principles for a responsive and visually appealing interface, ensuring real-world scalability and performance.
+Built with Expo, TypeScript, and Tailwind CSS, this app fetches movies and creates a popularity algorithm using Firebase. It provides users with a seamless browsing experience, ranking movies based on various engagement metrics. The app leverages modern UI/UX principles for a responsive and visually appealing interface, ensuring real-world scalability and performance.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -42,7 +32,7 @@ Built with Expo, TypeScript, and Tailwind CSS, this app fetches movies and creat
 
 - **[React Native](https://reactnative.dev/)** is a framework for building mobile UIs with React. It enables component‑based, cross-platform development with declarative UI, deep native API support, and is tightly integrated with Expo for navigation and native capabilities.
 
-- **[Appwrite](https://jsm.dev/rn25-appwrite)** is an open-source backend-as-a-service platform offering secure authentication (email/password, OAuth, SMS, magic links), databases, file storage with compression/encryption, real-time messaging, serverless functions, and static site hosting via Appwrite Sites—all managed through a unified console and microservices architecture.
+- **[Firebase](https://console.firebase.google.com)** is an open-source backend-as-a-service platform offering secure authentication (email/password, OAuth, SMS, magic links), databases, file storage with compression/encryption, real-time messaging, serverless functions, and static site hosting via Firebase Sites—all managed through a unified console and microservices architecture.
 
 - **[TypeScript](https://www.typescriptlang.org/)** is a statically-typed superset of JavaScript providing type annotations, interfaces, enums, generics, and enhanced tooling. It improves error detection, code quality, and scalability—ideal for robust, maintainable projects.
 
@@ -102,14 +92,24 @@ Create a new file named `.env` in the root of your project and add the following
 
 EXPO_PUBLIC_MOVIE_API_KEY=
 
-EXPO_PUBLIC_APPWRITE_PROJECT_ID=
+EXPO_PUBLIC_FIREBASE_API_KEY=
 
-EXPO_PUBLIC_APPWRITE_DATABASE_ID=
+EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN=
 
-EXPO_PUBLIC_APPWRITE_COLLECTION_ID=
+EXPO_PUBLIC_FIREBASE_PROJECT_ID=
+
+EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET=
+
+EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+
+EXPO_PUBLIC_FIREBASE_APP_ID=
+
+EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID=
+
+EXPO_PUBLIC_FIRESTORE_METRICS_COLLECTION=
 ```
 
-Replace the placeholder values with your actual TMDB API key, Appwrite project ID, Database ID, and Collection ID. You can obtain these credentials by signing up on the [Appwrite](https://jsm.dev/rn25-appwrite), [TMDB](https://www.themoviedb.org/login).
+Replace the placeholder values with your actual TMDB API key, FIREBASE_API_KEY, FIREBASE_STORAGE_BUCKET, FIREBASE_MESSAGING_SENDER_ID, FIREBASE_APP_ID, FIRESTORE_METRICS_COLLECTION, FIREBASE_MEASUREMENT_ID, FIREBASE_AUTH_DOMAIN, and FIREBASE_PROJECT_ID. You can obtain these credentials by signing up on the [Firebase](https://console.firebase.google.com), [TMDB](https://www.themoviedb.org/login).
 
 **Running the Project**
 
@@ -249,23 +249,3 @@ interface TrendingCardProps {
 ```
 
 </details>
-
-## <a name="links">🔗 Assets</a>
-
-Assets and snippets used in the project can be found in the **[video kit](https://jsm.dev/rn25-movie)**.
-
-<a href="https://jsm.dev/rn25-movie" target="_blank">
-  <img src="assets/readme/videokit.webp" alt="Video Kit Banner">
-</a>
-
-## <a name="more">🚀 More</a>
-
-**Advance your skills with Next.js Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
-
-detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://jsm.dev/rn25-jsm" target="_blank">
-   <img src="assets/readme/jsmpro.webp" alt="Project Banner">
-</a>
