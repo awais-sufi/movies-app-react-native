@@ -9,7 +9,6 @@ import {
 } from "react-native";
 
 import { fetchMovies } from "@/services/api";
-import { getTrendingMovies } from "@/services/appwrite";
 import useFetch from "@/services/usefetch";
 
 import { icons } from "@/constants/icons";
@@ -18,6 +17,7 @@ import { images } from "@/constants/images";
 import MovieCard from "@/components/MovieCard";
 import SearchBar from "@/components/SearchBar";
 import TrendingCard from "@/components/TrendingCard";
+import { getTrendingMovies } from "@/services/metrics";
 
 const Index = () => {
   const router = useRouter();
